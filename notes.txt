@@ -1,0 +1,4 @@
+search google font
+https://fonts.google.com/
+
+click vao font thich -> customize -> embbed -> copy link bo vao head trang web
