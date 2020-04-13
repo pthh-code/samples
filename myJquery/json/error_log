@@ -1,0 +1,4 @@
+[10-Aug-2018 22:16:48 America/Chicago] PHP Fatal error:  Call to a member function laygiulieu() on null in /home3/myhee/public_html/my-samples/json/application/controllers/Slides.php on line 18
+[10-Aug-2018 22:17:59 America/Chicago] PHP Fatal error:  Call to a member function laygiulieu() on null in /home3/myhee/public_html/my-samples/json/application/controllers/Slides.php on line 18
+[10-Aug-2018 22:18:28 America/Chicago] PHP Fatal error:  Call to a member function laygiulieu() on null in /home3/myhee/public_html/my-samples/json/application/controllers/Slides.php on line 18
+[10-Aug-2018 22:21:10 America/Chicago] PHP Fatal error:  Call to a member function updateGiulieu() on null in /home3/myhee/public_html/my-samples/json/application/controllers/Slides.php on line 92

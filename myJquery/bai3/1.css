@@ -1,0 +1,71 @@
+*{margin: 0; padding: 0;}
+.noidung {
+    font-family: 'Merienda', cursive;
+    margin: auto;
+    width: 60%;
+}
+
+body {
+    background-image: url('images/bg2.jpg');
+}
+h1.tieude{
+    font-family: 'Merienda', cursive;
+    font-weight: 100;
+    margin: 17px 0px;
+    text-align: center;
+    font-size: 37px;
+    margin-bottom: 100px;
+}
+img.anhnho{
+    float: left;
+    height: 100px;
+    width:150px;
+    margin-right: 10px;
+
+}
+.vaicaianh{
+    /* dung overflow nay de keo no dang tran xuong*/
+    overflow: hidden;  
+}
+
+._1motkhoi {
+    border-bottom: 1px solid #bbbaba;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+h2.tdkhoi
+{
+    height:35px;
+    font-size: 20px;
+    color: red;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.tdkhoi img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    transition: 0.4s;
+    margin-right:-70px;
+   /* transform: rotate(180deg);*/
+}
+
+h2.tdkhoi:hover img{
+    margin-right: 0px;
+    }
+
+h2.tdkhoi:hover{
+    color: blue;
+    }
+h2.tdkhoi.xanh img{
+    margin: 0;
+    transition: rotate(180deg);
+}
+
+
+
+
+
+

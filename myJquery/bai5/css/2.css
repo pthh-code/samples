@@ -1,0 +1,112 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.tinto {
+    width: 400px;
+    height: 300px;
+    /* nhung phan nao nam ngoai vung 400x300 thi bi hidden*/
+    overflow: hidden;
+
+    /*no la bo cac phan tu con phai cho position la relative de lam moc cho cac phan tu con can theo*/
+    position: relative;
+    float:left;
+    margin:20px;
+}
+
+img.layer1{
+	height:300px;
+}
+.xam{
+	width: 400px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.32);
+
+    /* absolute de chia deu */
+    /* position , top, left, z-index la 4 thuoc tinh mac dinh de xac dinh layer trong web, cu theo cong thuc nay thi lap duoc layer */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gradient {
+    width: 400px;
+    height: 300px;
+    background-image: -webkit-linear-gradient(45deg,#5DCD6A 0%,#D38253 40%,#4B4A4A 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* so z-index cang lon thi cang o ngoai*/
+    z-index: 2;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.hinhvuong {
+	/* width va height so voi body */
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    z-index: 3;
+    /* so voi width and height */
+    top: 9%;
+    left: 9%;
+    border: 3px solid white;
+    transition: 0.2s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.chuto {
+    font-size: 31px;
+    font-family: segoe ui light;
+    position: absolute;
+    top: 34%;
+    left: 0%;
+    z-index: 4;
+    color: white;
+    text-align: center;
+    width: 100%;
+    transition: 0.4s;
+    top: 44%;
+}
+
+.chunho {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: white;
+    z-index: 5;
+    width: 70%;
+    text-align: center;
+    font-family: segoe ui light;
+    text-transform: uppercase;
+    transition: 0.2s;
+    opacity: 0;
+    transform: scale(0);
+    
+}
+
+.tinto:hover .chuto {
+    transform: translateY(-30px);
+}
+
+.tinto:hover .chunho {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.tinto:hover .hinhvuong {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.tinto:hover .xam {
+    opacity: 0;
+}
+
+.tinto:hover .gradient {
+    opacity: 0.4;
+}

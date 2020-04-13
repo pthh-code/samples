@@ -1,0 +1,52 @@
+$(function() {
+	$('.next').click(function(event) {
+		var sau = $('.active').next();
+
+		if(sau.length == 0)
+		{
+			$('.active').addClass('bien-mat-o-ben-trai').one('webkitAnimationEnd', function(event) {
+			$('.bien-mat-o-ben-trai').removeClass('bien-mat-o-ben-trai');
+		});
+            //cho slide cuoi cung roi , lay slide dau lafm slide tiep theo
+			$('.anhslide ._1slide:nth-child(1)').addClass('di-vao-tu-ben-phai').one('webkitAnimationEnd', function(event) {
+			$('.active').removeClass('active');
+			$('.di-vao-tu-ben-phai').addClass('active').removeClass('di-vao-tu-ben-phai');
+		});
+		}
+		else{
+		$('.active').addClass('bien-mat-o-ben-trai').one('webkitAnimationEnd', function(event) {
+			$('.active').removeClass('bien-mat-o-ben-trai');
+		});
+		
+		sau.addClass('di-vao-tu-ben-phai').one('webkitAnimationEnd', function(event) {
+			$('.active').removeClass('active');
+			$('.di-vao-tu-ben-phai').addClass('active').removeClass('di-vao-tu-ben-phai');
+		});
+}
+	});
+	// nut prev
+    $('.prev').click(function(event) {
+    	var truoc = $('.active').prev();
+       if(truoc.length == 1){
+    	$('.active').addClass('bien-mat-o-ben-phai').one('webkitAnimationEnd', function(event) {
+			$('.bien-mat-o-ben-phai').removeClass('bien-mat-o-ben-phai');
+		});
+
+		truoc.addClass('di-vao-tu-ben-trai').one('webkitAnimationEnd', function(event) {
+			$('.active').removeClass('active');
+			$('.di-vao-tu-ben-trai').addClass('active').removeClass('di-vao-tu-ben-trai');
+		});
+	}
+	else{
+		$('.active').addClass('bien-mat-o-ben-phai').one('webkitAnimationEnd', function(event) {
+			$('.bien-mat-o-ben-phai').removeClass('bien-mat-o-ben-phai');
+		});
+
+		$('.anhslide ._1slide:last-child').addClass('di-vao-tu-ben-trai').one('webkitAnimationEnd', function(event) {
+			$('.active').removeClass('active');
+			$('.di-vao-tu-ben-trai').addClass('active').removeClass('di-vao-tu-ben-trai');
+		});
+	}
+    });
+
+});

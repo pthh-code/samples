@@ -1,0 +1,149 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+.prev {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 0px;
+    cursor: pointer;
+}
+.next{
+	position: absolute;
+    z-index: 4;
+    top: 50%;
+    right: 0px;
+    cursor: pointer;
+}
+
+
+.anhslide {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+header.apple {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.nutslide li{
+	list-style: none;
+	width: 15px;
+	height:15px;
+	margin:10px;
+	float:left;
+	background: lightgray;
+	border-radius: 50%;
+	/*cho no bien cac so 1,2,3,4 vi khong co man hinh nao 9000px*/
+	text-indent: 9000px;
+	cursor: pointer;
+	transition: 0.4s;
+	border:1px solid white;
+}
+.nutslide li:hover{
+	background: black;
+	}
+	ul{
+		display: inline-block;
+	}
+.nutslide{
+	width: 100%;
+	text-align: center;
+	height:50px;
+}
+
+._1slide {
+    position: absolute;
+    top:0px;
+    left:0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+ ._1slide.active{
+	opacity:1;
+	visibility: visible;
+	}
+
+._1slide.di-vao-tu-ben-phai{
+	animation: di-vao-tu-ben-phai 1s forwards;
+}
+@-webkit-keyframes di-vao-tu-ben-phai{
+	0%{
+		transform: translateX(100%);
+		visibility: hidden;
+		opacity:0;
+	}
+	100%{
+		transform: translateX(0%);
+		visibility: visible;
+		opacity:1;
+	}
+
+} 
+
+._1slide.bien-mat-o-ben-trai{
+	animation: bien-mat-o-ben-trai 1s forwards;
+}
+@-webkit-keyframes bien-mat-o-ben-trai{
+	0%{
+		transform: translateX(0%);
+		visibility: visible;
+		opacity:1;
+	}
+	100%{
+		transform: translateX(-100%);
+		visibility: hidden;
+		opacity:0;
+	}
+
+} 
+
+.nutslide li.xanh {
+    background: none;
+    border: 1px solid #86d0d0;
+}
+
+
+
+
+
+._1slide.di-vao-tu-ben-trai{
+	animation: di-vao-tu-ben-trai 1s forwards;
+}
+@-webkit-keyframes di-vao-tu-ben-trai{
+	0%{
+		transform: translateX(-100%);
+		visibility: hidden;
+		opacity:0;
+	}
+	100%{
+		transform: translateX(0%);
+		visibility: visible;
+		opacity:1;
+	}
+
+} 
+
+._1slide.bien-mat-o-ben-phai{
+	animation: bien-mat-o-ben-phai 1s forwards;
+}
+@-webkit-keyframes bien-mat-o-ben-phai{
+	0%{
+		transform: translateX(0%);
+		visibility: visible;
+		opacity:1;
+	}
+	100%{
+		transform: translateX(100%);
+		visibility: hidden;
+		opacity:0;
+	}
+
+} 

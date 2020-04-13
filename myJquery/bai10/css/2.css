@@ -1,0 +1,110 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+.nut {
+    position: absolute;
+    top: 66%;
+    left: 22%;
+    font-size: 20px;
+    background: white;
+    z-index: 2;
+    padding: 7px 15px;
+    text-align: center;
+    color: #339bbd;
+    border-radius: 30px;
+    opacity:0;
+    -webkit-animation: duoilen 1s forwards;
+    -webkit-animation-delay: 6s;
+}
+@-webkit-keyframes duoilen{
+	0%{transform: translateY(100px); opacity:0;}
+	100%{transform: translateY(0px); opacity:1;}
+}
+
+.chuto {
+    position: absolute;
+    left: 14%;
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+    top: 46%;
+    width: 500px;
+    opacity:0;
+    -webkit-animation: chutovao 1s forwards;
+    -webkit-animation-delay: 5s;
+}
+@-webkit-keyframes chutovao{
+	0%{transform: translateX(100px); opacity:0;}
+	100%{transform: translateX(0px); opacity:1;}
+}
+
+img.dammay {
+    position: absolute;
+    bottom: 0px;
+    z-index: 4;
+    right: 0%;
+    opacity: 0;
+    -webkit-animation: maylen 1s forwards;
+    
+}
+@-webkit-keyframes maylen{
+	0%{transform: translateY(300px); opacity:0;}
+	100%{transform: translateY(0px); opacity:1;}
+}
+
+img.hoatiet3 {
+    position: absolute;
+    bottom: 11%;
+    right: 29%;
+    opacity:0;
+    -webkit-animation: hoalenmot 1s forwards;
+    -webkit-animation-delay: 4s;
+}
+
+img.embe {
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+    z-index: 3;
+    opacity:0;
+    -webkit-animation: embelen 1s forwards;
+    -webkit-animation-delay: 0.8s;
+}
+@-webkit-keyframes embelen{
+	0%{transform: translateY(100px); opacity:0;}
+	100%{transform: translateY(0px); opacity:1;}
+}
+img.hoatiet2 {
+    position: absolute;
+    bottom: 40%;
+    z-index: 2;
+    right: 30%;
+    opacity:0;
+    -webkit-animation: hoalenmot 1s forwards;
+    -webkit-animation-delay: 3s;
+}
+
+
+img.hoatiet1 {
+    z-index: 1;
+    position: absolute;
+    bottom: 38%;
+    right: 28%;
+    opacity: 0;
+    -webkit-animation: hoalenmot 1s forwards;
+    -webkit-animation-delay: 2s;
+}
+@-webkit-keyframes hoalenmot{
+	0%{transform: translateY(100px); opacity:0;}
+	100%{transform: translateY(0px); opacity:1;}
+}
+
+header.to {
+    height: 700px;
+    background-image: url(../images/nen.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}

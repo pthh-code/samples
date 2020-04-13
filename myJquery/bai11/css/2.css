@@ -1,0 +1,96 @@
+*{padding:0; margin:0;}
+
+.nutdong {
+    border-radius: 5px;
+    border: white solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: green;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.nutdong:hover {
+    background: black;
+}
+
+h3 {
+    background: #83d083b0;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.nut {
+    background: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.nut:hover {
+    background: #7CB342;
+    color: black;
+}
+
+.noidung {
+    margin-top: 200px;
+    width: 450px;
+    height: 230px;
+    margin-top: 15%;
+    margin-left: 40%;
+    color: white;
+    background: green;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    transform: scale(0.3);
+}
+.noidung.noidunghienra {
+    opacity: 1;
+    visibility: visible;
+
+    transform:scale(1);
+}
+
+.text {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.phai {width: 45%;float: left;padding-top: 40px;padding-left: 50px;}
+
+.trai {
+    width: 45%;
+    float: left;
+    padding-top: 20px;
+}
+
+.phan2cot {
+    width: 600px;
+    margin: auto;
+}
+
+small.chunho {padding-left: 37%;font-size: 15px;}
+
+h2.chuto {text-align: center;padding-top: 3%;}
+
+.tieude {
+    color: white;
+    background: #285f39;
+    height: 200px;
+    width: 100%;
+}
+
+body {
+    background: #00ffd0;
+    font-family: segoe ui light;
+}
